@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./obr/logo.svg" type="image/x-icon">
+  <!-- Imports -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <!-- Title -->
+  <title>Programovanie & Webový Vývoj - TWS záverečný projekt</title>
+  <!-- Css -->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/tailwind.css">
+  <!-- JavaScript -->
+  <script defer src="./js/main.js"></script>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</head>
+
+<body class="relative" aria-nav="false">
+  <div class="nav__bg absolute z-[99] w-full h-full bg-[hsl(var(--c-p-2))] sm:hidden flex">
+  </div>
+  <header class="relative w-full text-[hsl(var(--c-p-1))]">
+    <img class="z-[-1] flex mx-auto relative max-h-[50rem]" src="./obr/coding on notebook v2.jpg" alt="image-hero">
+    <div class="absolute w-full h-full z-[80] top-0" style="background-color: rgba(0, 1, 59, 0.212);filter:blur(1rem);">
+    </div>
+    <nav class="w-full absolute z-[100] top-0">
+      <div class="grid-container">
+        <div class="flex justify-between items-center gap-8 py-12">
+          <a href="#" class="">
+            <img class="size-[3rem]" src="./obr/logo.svg" alt="logo">
+          </a>
+          <div class="nav__list items-center gap-8 flex flex-wrap fs-500 sm:justify-center" data-visible="false"
+            aria-controls="open / cloese nav">
+            <a class="custom-underline link" href="#programovanie">Programovanie</a>
+            <a class="custom-underline link" href="#webDev">Webový vývoj </a>
+            <a class="custom-underline link" href="#javaScriptSekcia">JavaScript Sekcia</a>
+            <a class="custom-underline link" href="#viacInfo">Viac info</a>
+          </div>
+          <button class="nav__toggle flex sm:hidden" aria-controls="open / close nav" aria-expanded="false">
+            <img src="./obr/icon-hamburger.svg" alt="hamburger">
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div style="z-index: 99;" class="hero w-full absolute top-[50%] translate-y-[-50%]">
+      <div class="grid-container">
+        <div style="z-index: 99;" class="items-center justify-center md:justify-start hidden sm:flex">
+          <div class="border-2 border-white border-solid px-[3rem] py-[2rem] w-full">
+            <h1 class="uppercase ff-p-2 fs-800 font-light leading-[1.05] w-full text-center">Programovanie & Webový
+              vývoj
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="w-full my-8">
+    <div id="programovanie">
+      <div class="container py-5">
+        <h1 class="h1 text-uppercase  display-5 text-center">
+          Programovanie
+        </h1>
+        <p class="text-center mx-auto py-3" style="max-width: 60ch;">Je proces tvorby a písania počítačových
+          programov.
+          Zahŕňa navrhovanie algoritmov, riešenie problémov a implementáciu týchto riešení pomocou programovacích
+          jazykov.</p>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-12 my-4">
+            <h3>1. Programovacie jazyky</h3>
+            <p>Existuje mnoho programovacích jazykov, z ktorých každý má svoje špecifiká a využitie. Medzi
+              najznámejšie patria:</p>
+            <ul style="list-style: circle;">
+              <li>Python: Populárny pre svoju jednoduchosť a čitateľnosť, často používaný v oblasti dátovej vedy,
+                webového vývoja a automatizácie.</li>
+              <li>Java: Používaný pre vývoj mobilných aplikácií (najmä pre Android), webových aplikácií a veľkých
+                systémov.</li>
+              <li>C/C++: Jazyky s vysokým výkonom, používané v systémoch, kde je dôležitá rýchlosť a efektivita, ako
+                sú operačné systémy a hry.</li>
+              <li>JavaScript: Hlavný jazyk pre vývoj webových stránok, umožňuje interaktivitu na strane klienta.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-12 my-4">
+            <h3>2. Základné koncepty programovania</h3>
+            <ul style="list-style: circle;">
+              <li>Premenné: Miesto v pamäti, kde sa uchovávajú údaje, ktoré sa môžu meniť počas vykonávania programu.
+              </li>
+              <li>Podmienky: Používajú sa na rozhodovanie v programe (if, else, switch).</li>
+              <li>Cykly: Umožňujú opakovanie určitých činností (for, while).</li>
+              <li>Funkcie: Bloky kódu, ktoré vykonávajú určitú činnosť a môžu byť volané z iných častí programu.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-12 my-4">
+            <h3>3. Vývojové prostredia (IDE)</h3>
+            <p>Programátori často používajú integrované vývojové prostredia, ktoré poskytujú nástroje na písanie,
+              testovanie a ladenie kódu. Medzi populárne IDE patria:</p>
+            <ul style="list-style: circle;">
+              <li>Visual Studio Code: Populárne medzi vývojármi webových aplikácií.</li>
+              <li>PyCharm: Špecializované pre vývoj v jazyku Python.</li>
+              <li>Eclipse: Často používané pre Java vývoj.</li>
+              <li>IntelliJ IDEA: Univerzálne IDE s podporou mnohých jazykov.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-12 my-4">
+            <h3>4. Riešenie problémov a algoritmy</h3>
+            <ul style="list-style: circle;">
+              <li>Algoritmy: Krok-za-krokom postupy na riešenie problémov.</li>
+              <li>Dátové štruktúry: Spôsoby ukladania a organizovania údajov (polia, zoznamy, stromy, grafy).</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-12 my-4">
+            <h3>5. Verzovanie kódu</h3>
+            <ul style="list-style: circle;">
+              <li>Git: Nástroj na správu verzií, ktorý umožňuje sledovať zmeny v kóde a spolupracovať na projektoch.
+              </li>
+              <li>GitHub: Platforma na hostovanie projektov používajúcich Git, poskytuje nástroje na spoluprácu a
+                správu projektov.</li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-center mx-auto py-3" style="max-width: 60ch">
+          Programovanie je široké pole s mnohými špecializáciami a možnosťami. Či už sa zameriavate na vývoj webových
+          stránok, mobilných aplikácií, systémového softvéru, alebo strojové učenie, existuje nespočetné množstvo
+          zdrojov a komunít, ktoré vám môžu pomôcť na vašej ceste.
+        </p>
+      </div>
+
+    </div>
+
+    <div id="webDev">
+      <div class="container py-5">
+        <h1 class="h1 text-uppercase  display-5 text-center">
+          Webový vývoj
+        </h1>
+        <p class="text-center mx-auto py-3" style="max-width: 60ch;">Webový vývoj (web development) je proces tvorby a
+          údržby webových stránok a webových aplikácií. Zahŕňa rôzne disciplíny a zručnosti, ktoré sa dajú rozdeliť na
+          dve hlavné kategórie: front-end (klientska strana) a back-end (serverová strana).</p>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-12 my-4">
+            <h3>Front-end vývoj</h3>
+            <p>Front-end vývoj sa zaoberá tým, čo vidí a s čím interaguje používateľ. Patria sem nasledujúce technológie
+              a nástroje:</p>
+            <ul style="list-style: circle;">
+              <li>HTML (HyperText Markup Language): Základný značkovací jazyk používaný na tvorbu štruktúry webových
+                stránok.</li>
+              <li>CSS (Cascading Style Sheets): Používa sa na štýlovanie a rozloženie webových stránok, umožňuje dizajn
+                webu vrátane farieb, fontov a rozloženia.</li>
+              <li>JavaScript: Skriptovací jazyk, ktorý umožňuje pridávať interaktivitu na webové stránky, ako sú
+                animácie, formuláre a dynamický obsah.</li>
+              <li>Frameworky a knižnice:</li>
+              <ul style="list-style: square;">
+                <li>React: Knižnica vyvinutá Facebookom na tvorbu používateľských rozhraní.</li>
+                <li>Angular: Framework vyvinutý Googlem pre budovanie komplexných webových aplikácií.</li>
+                <li>Vue.js: Progresívny JavaScriptový framework, ktorý sa ľahko integruje do projektov.</li>
+              </ul>
+
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-12 my-4">
+            <h3>Back-end vývoj</h3>
+            <p>Back-end vývoj sa zaoberá serverovou logikou, databázami a autentifikáciou používateľov. Patria sem
+              nasledujúce technológie a nástroje:</p>
+            <ul style="list-style: circle;">
+              <li>Programovacie jazyky:</li>
+              <ul style="list-style: square;">
+                <li>Python: Často používaný s frameworkom Django alebo Flask.</li>
+                <li>Ruby: Používaný s frameworkom Ruby on Rails.</li>
+                <li>Java: Používaný v enterprise aplikáciách s frameworkmi ako Spring.</li>
+                <li>JavaScript (Node.js): Umožňuje používanie JavaScriptu na serverovej strane.</li>
+                <li>PHP: Často používaný v kombinácii s CMS ako WordPress.</li>
+              </ul>
+              <li>Databázy:</li>
+              <ul style="list-style: square;">
+                <li>SQL databázy: MySQL, PostgreSQL, MariaDB.</li>
+                <li>NoSQL databázy: MongoDB, CouchDB, Firebase.</li>
+              </ul>
+              <li>Webové servery: Apache, Nginx.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-12 my-4">
+            <h3>Full-stack vývoj</h3>
+            <p>Full-stack vývojár je osoba, ktorá má znalosti a zručnosti na prácu s oboma stranami – front-end aj
+              back-end. Full-stack vývojári často používajú technológie ako:</p>
+            <ul style="list-style: circle;">
+              <li>MEAN stack: MongoDB, Express.js, Angular, Node.js.</li>
+              <li>MERN stack: MongoDB, Express.js, React, Node.js.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-12 my-4">
+            <h3>Nástroje a techniky</h3>
+            <ul style="list-style: circle;">
+              <li>Verzovanie kódu: Git je najpopulárnejší nástroj na správu verzií kódu.</li>
+              <li>Vývojové prostredia (IDE): Visual Studio Code, Sublime Text, Atom.</li>
+              <li>Kontinuálna integrácia a nasadzovanie (CI/CD): Jenkins, Travis CI, GitHub Actions.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-12 my-4">
+            <h3>Optimalizácia a zabezpečenie</h3>
+            <ul style="list-style: circle;">
+              <li>SEO (Search Engine Optimization): Optimalizácia webových stránok pre vyhľadávače, aby sa zlepšila
+                viditeľnosť a návštevnosť.
+              </li>
+              <li>Zabezpečenie: Ochrana webových aplikácií pred útokmi, ako sú SQL injection, Cross-Site Scripting
+                (XSS), a Cross-Site Request Forgery (CSRF).</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6 col-md-12 my-4">
+            <h3>Trendy a budúcnosť</h3>
+            <ul style="list-style: circle;">
+              <li>Progressive Web Apps (PWA): Webové aplikácie, ktoré fungujú ako natívne aplikácie na mobilných
+                zariadeniach.
+              </li>
+              <li>Single Page Applications (SPA): Aplikácie, ktoré načítavajú jednu HTML stránku a dynamicky aktualizujú
+                obsah.</li>
+              <li>Serverless architektúra: Používanie služieb ako AWS Lambda na beh kódu bez správy serverov.</li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-center mx-auto py-3" style="max-width: 60ch">
+          Webový vývoj je dynamická a rýchlo sa rozvíjajúca oblasť s množstvom príležitostí pre tých, ktorí majú záujem
+          tvoriť a inovovať.
+        </p>
+      </div>
+
+    </div>
+
+    <div id="javaScriptSekcia">
+      <div class="container">
+        <h1 class="class="h1 text-uppercase  display-5 text-center"">Javascript</h1>
+        <h5>Zmena štvorca</h5>
+        <div id="wraper1">
+          <div id="inputCon">
+            <span class="inputSpan">
+              RBG:
+              <input id="rgbi" type="checkbox">
+            </span>
+            <span class="inputSpan">
+              Farba:
+              <input id="colori" type="color">
+            </span>
+            <span class="inputSpan">
+              Border radius: (px)
+              <input id="bri" type="number">
+            </span>
+          </div>
+          <div id="stvorec"></div>
+        </div>
+        <h5>Zmena fontu</h5>
+        <div id="wraper2">
+          <div>
+            <label for="font1">Font 1</label>
+          <input type="radio" name="font" id="font1" checked>
+          </div>
+          <div>
+            <label for="font2">Font 2</label>
+              <input type="radio" name="font" id="font2">
+          </div>
+          <div>
+            <label for="font3">Font 3</label>
+              <input type="radio" name="font" id="font3">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="mt-auto w-full bg-[hsl(var(--c-p-2))] text-[hsl(var(--c-p-1))]" id="viacInfo">
+    <div class="grid-container">
+      <div class="flex flex-col items-center text-center gap-10 my-16 md:justify-between md:flex-row">
+        <div class="flex flex-col items-center gap-8">
+          <a href="#">
+            <img class="size-[4rem]" src="./obr/logo.svg" alt="logo">
+          </a>
+          <div class="flex items-center flex-col gap-6 fs-500 md:flex-row">
+            <a class="custom-underline link" href="#programovanie">Programovanie</a>
+            <a class="custom-underline link" href="#webDev">Webový vývoj </a>
+            <a class="custom-underline link" href="#javaScriptSekcia">JavaScript Sekcia</a>
+            <a class="custom-underline link" href="#viacInfo">Viac info</a>
+          </div>
+        </div>
+        <a class="text-[hsl(var(--c-p-3))]" href="#">© 2024 Adrián Chlebovec, SPŠT SNV</a>
+      </div>
+    </div>
+    </div>
+  </footer>
+</body>
+
+</html>

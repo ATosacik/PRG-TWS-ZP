@@ -1,0 +1,251 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+  /* * Colors: * */
+  /* ? primary colors ? */
+  --c-p-1: 0, 0%, 100%;
+  --c-p-2: 0, 0%, 0%;
+  --c-p-3: 0, 0%, 55%;
+  --c-p-4: 0, 0%, 41%;
+  /* ? neutral colors ? */
+  /* * Typography: * */
+  /* ? fonts families ? */
+  --ff-p-1: 'Alata', sans-serif;
+  --ff-p-2: 'Josefin Sans', sans-serif;
+  /* ? font sizes ? */
+  --fs-1000: 2.986rem;
+  --fs-900: clamp(2.488rem, 5vw, 4.3rem);
+  --fs-800: clamp(2.074rem, 7vw, 3rem);
+  --fs-700: 1.728rem;
+  --fs-600: 1.6rem;
+  --fs-500: 1rem;
+  --fs-400: 0.9375rem;
+  --fs-300: 0.833rem;
+  --fs-200: 0.694rem;
+}
+
+body {
+  font-family: monospace;
+}
+
+/* ------------------- */
+/* Body set up         */
+/* ------------------- */
+
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.link {
+  background-color: rgba(0, 0, 0, 0.459);
+  padding: .25rem .5rem;
+  border-radius: .25rem;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100svh;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--fs-400);
+  font-family: var(--ff-p-1) !important;
+  background-color: hsl(var(--c-p-1));
+  color: hsl(var(--c-p-2));
+}
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* Box sizing */
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Reset spacing */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6, p { font-weight: 400; }
+
+/* make images easier to work with */
+img, picutre {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+input, button, textarea, select { font: inherit; }
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+/* general */
+
+/* color */
+
+/* typography */
+
+.ff-p-1 { font-family: var(--ff-p-1); }
+.ff-p-2 { font-family: var(--ff-p-2); }
+
+.fs-1000 { font-size: var(--fs-1000); }
+.fs-900 { font-size: var(--fs-900); }
+.fs-800 { font-size: var(--fs-800); }
+.fs-700 { font-size: var(--fs-700); }
+.fs-600 { font-size: var(--fs-600); }
+.fs-500 { font-size: var(--fs-500); }
+.fs-400 { font-size: var(--fs-400); }
+.fs-300 { font-size: var(--fs-300); }
+.fs-200 { font-size: var(--fs-200); }
+
+h1, h2, h3, h4, h5, h6 { 
+  line-height: 1.1; 
+  font-family: var(--ff-p-2); 
+  font-weight: 300; 
+}
+
+/* ------------------- */
+/* Compontents         */
+/* ------------------- */
+
+.custom-underline {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    background-color: white;
+    height: 2px;
+    bottom: -.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.custom-underline:hover,
+.custom-underline:focus {
+  &::before {
+    width: 1.6rem;
+    transition: width 300ms;
+  }
+}
+
+@media (max-width: 39.9999em) {
+  .nav__list {
+    position: absolute;
+    display: flex !important;
+    flex-direction: column;
+    font-size: var(--fs-600);
+    top: 200%;
+    text-transform: uppercase;
+    font-family: var(--ff-p-2);
+    font-weight: 300;
+    gap: 1.5rem !important;
+    background-color: hsl(var(--c-p-2));
+    text-align: left !important;
+    align-items: start !important;
+    width: 100%;
+    transform: translateX(120%);
+  }
+
+  .nav__bg {
+    transform: translateX(120%) !important;
+  }
+
+  .nav__list[data-visible="true"] {
+    transform: translateX(0);
+    transition: transform linear 300ms;
+  }
+
+  body[aria-nav="true"] .nav__bg {
+    transform: translateX(0) !important;
+    transition: transform linear 300ms;
+  }
+}
+
+#wraper1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+#inputCon {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: start;
+}
+
+#stvorec {
+  width: 25%;
+  aspect-ratio: 1 / 1;
+  background-color: black;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.inputSpan {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+input {
+  border: 1px solid black !important;
+  padding-inline: .5rem !important;
+}
+
+/* ------------------- */
+/* Layout              */
+/* ------------------- */
+
+.grid-container {
+  display: grid;
+  margin-inline: auto;
+  align-items: start;
+  grid-template-columns: 
+  minmax(1.5rem, 1fr)  
+  minmax(0, 70rem) 
+  minmax(1.5rem, 1fr);
+}
+
+.grid-container > *:nth-child(1) {
+  grid-column: 2;
+}
